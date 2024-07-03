@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1a1125"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/categoryName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Category Name"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/round_back_transparent10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/quoteTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            android:text="Quote Text"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:textColor="#99ffffff"
+            android:layout_gravity="end"
+            android:id="@+id/writerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Writer Name"
+            android:layout_marginEnd="20dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="#ffffff"
+            android:id="@+id/prevBtn"
+            android:background="@drawable/round_back_blue10"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Prev"
+            android:textAllCaps="false"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+        <ImageView
+            android:id="@+id/copyBtn"
+            android:background="@drawable/round_back_transparent10"
+            android:padding="14dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/copy_icon"
+            android:layout_centerInParent="true"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="#ffffff"
+            android:id="@+id/nextBtn"
+            android:background="@drawable/round_back_blue10"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>
